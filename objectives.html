@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Objectives - Ramirez, Vic Emerald M.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .objectives-header {
+            position: relative;
+            height: 300px;
+            background-image: url('images/l.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .objectives-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .objectives-header h1 {
+            font-size: 3.5rem;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .objective-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .objective-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .objective-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .objective-content {
+            padding: 1.5rem;
+        }
+
+        .objective-content h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .objective-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 992px) {
+            .objectives-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .objectives-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .objectives-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html" class="site-title">Ramirez, Vic Emerald M..</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="objectives.html" class="active">Objectives</a></li>
+            <li><a href="seminars.html">Seminars</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <header class="objectives-header">
+        <h1>Learning Objectives</h1>
+    </header>
+
+    <main class="main-content">
+        <div class="objectives-grid">
+            <div class="objective-card">
+                <img src="images/m.png" alt="Practical Skills" class="objective-image" 
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/400x200?text=Practical+Skills'">
+                <div class="objective-content">
+                    <h3>Develop Practical Skills</h3>
+                    <p>Provides hands-on experience, helping students develop practical skills in event coordination, communication, and problem-solving, which are valuable in both academic and professional settings.</p>
+                </div>
+            </div>
+
+            <div class="objective-card">
+                <img src="images/n.png" alt="Technical Skills" class="objective-image"
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/400x200?text=Technical+Skills'">
+                <div class="objective-content">
+                    <h3>Enhance Technical Skills</h3>
+                    <p>Engaging in lifelong learning, particularly in the evolving field of electrical engineering, enhances technical knowledge. By participating in seminars, students stay informed about advancements and apply new concepts, contributing to their expertise and professional competence.</p>
+                </div>
+            </div>
+
+            <div class="objective-card">
+                <img src="images/o.png" alt="Professional Growth" class="objective-image"
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/400x200?text=Professional+Growth'">
+                <div class="objective-content">
+                    <h3>Professional Growth</h3>
+                    <p>Develops positive attitudes, responsibility, and behavior in students helps professional growth. By managing tasks like organizing seminars, students build leadership, time management, and accountability skills essential for career success in electrical engineering.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Link"><i class="fas fa-link"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
